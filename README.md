@@ -117,7 +117,7 @@ Membuat model menggunakan layer yang dibuat dibagi menjadi 3 yaitu Input Layer, 
 
 3. Hidden Layer
 
-    Menggunakan Layer Dense sebanyak 4 sesuai dengan jumlah labelsnya dengan fungsi activation softmax
+    Menggunakan Layer Dense sebanyak 4 sesuai dengan jumlah labelnya dengan fungsi activation softmax
 
 
 
