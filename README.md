@@ -1,4 +1,4 @@
-<b><center><h1>Project Akhir</h1></center></b>
+<center><b><h1>Project Akhir</h1></b></center>
 <center><h2>Praktikum Kecerdasan Buatan</h2></center>
 <center><h2>Deep Learning - Image Processing</h2></center>
 
@@ -11,13 +11,13 @@
     - Bagian Modeling
     - Bagian Evaluasi
         - Model Predict
+        
 2. Rahmayanti 2009106078
     - Bagian Collecting
     - Bagian Preprocessing
     - Bagian Evaluasi
         - Visualisasi Akurasi dan Loss
         - Model Test Evaluate
-        - Classification Matrix
 
 <b><h2>Table of Content</h2></b>
 1. Data Collecting
@@ -30,14 +30,13 @@ Source Dataset: <a href="https://www.kaggle.com/datasets/noobyogi0100/shoe-datas
 
 Total gambar keseluruhan setelah dibersihkan dan disamakan ukuran gambarnya secara manual: 900 gambar
 
-Dataset yang digunakan berupa gambar Sepatu dengan 4 Jenis yang berbeda yaitu
+Dataset yang digunakan berupa gambar Sepatu dengan 4 Jenis yang berbeda yaitu:
 1. boots
 2. loafers
 3. sneakers
 4. soccers
 
-Dan sistem akan mengklasifikasi gambar Sepatu sesuai dengan jenisnya.
-
+lalu sistem akan mengklasifikasi gambar Sepatu sesuai dengan jenisnya.
 
 <h4>Berikut adalah visualisasi untuk menampilkan jumlah file seluruh gambar dan tiap folder yang sudah displit
 
@@ -46,10 +45,10 @@ menjadi Data Training(70%), Validation(10%), dan Testing(20%) per jenisnya denga
 <b>- Jumlah File Keseluruhan Data</b>
 
 ![seluruhfile](https://user-images.githubusercontent.com/74246083/205809395-841f4e07-a8ba-4288-bc65-51cf96683a0d.png)
- - Jumlah File boots = 200 gambar
- - Jumlah File loafers = 200 gambar
- - Jumlah File sneakers = 200 gambar
- - Jumlah File soccers = 200 gambar
+ - Jumlah File boots = 222 gambar
+ - Jumlah File loafers = 222 gambar
+ - Jumlah File sneakers = 228 gambar
+ - Jumlah File soccers = 228 gambar
  - Jumlah FIle Keseluruhan = 900 gambar
  
 <b>- Jumlah File Data Training</b>
@@ -113,7 +112,7 @@ Membuat model menggunakan layer yang dibuat dibagi menjadi 3 yaitu Input Layer, 
 
 2. Ouput Layer
 
-    Menggunakan pooling sebanyak 2 dan matriks 2x2, convolution filter sebesar 64-128 dan matriks 3x3 dengan fungsi activation reLu lalu menggunakan Layer Flatten dan Dense 
+    Menggunakan pooling sebanyak 2 dan matriks 2x2, convolution filter sebesar 64-128 dan matriks 3x3 dengan fungsi activation reLu, lalu menggunakan Layer Flatten dan Dense 
 
 3. Hidden Layer
 
@@ -127,7 +126,7 @@ Melatih model yang disimpan ke variabel history menggunakan
 train_generator dengan epoch atau iterasi sebanyak 25 dan val_generator untuk validation datanya
 
 _<h3>Evaluasi</h3>_
-Menampilkan visualisasi akurasi data training dan validation menggunakan diagram garis
+Menampilkan visualisasi akurasi dan loss data training dan validation menggunakan diagram garis lalu model disimpan menggunakan _model.save()_
 
 Menampilkan evaluasi hasil training dengan menggunakan test_evaluate = _model.evaluate_
 
