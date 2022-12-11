@@ -12,7 +12,7 @@
     - Bagian Evaluasi
         - Model Predict
         
-2. Rahmayanti 2009106078
+2. Rahmayanti 2009106068
     - Bagian Collecting
     - Bagian Preprocessing
     - Bagian Evaluasi
@@ -22,8 +22,9 @@
 <b><h2>Table of Content</h2></b>
 1. Data Collecting
 2. Data Preprocessing
-3. Data Modeling
-4. Evaluasi
+3. Data Analysis and Visualization
+4. Data Modeling
+5. Evaluasi
 
 <b><h2>Penjelasan Dataset</h2></b>
 Source Dataset: <a href="https://www.kaggle.com/datasets/noobyogi0100/shoe-dataset">Shoe Dataset - Kaggle</a>
@@ -36,7 +37,7 @@ Dataset yang digunakan berupa gambar Sepatu dengan 4 Jenis yang berbeda yaitu:
 3. sneakers
 4. soccers
 
-lalu sistem akan mengklasifikasi gambar Sepatu sesuai dengan jenisnya.
+dan sistem akan mengklasifikasi gambar Sepatu sesuai dengan jenisnya.
 
 <h4>Berikut adalah visualisasi untuk menampilkan jumlah file seluruh gambar dan tiap folder yang sudah displit
 
@@ -110,11 +111,11 @@ Membuat model menggunakan layer yang dibuat dibagi menjadi 3 yaitu Input Layer, 
 
     Menggunakan convolution layer sebanyak 32 dan matriks 3x3 dengan fungsi activation reLu dan input shape sesuai dengan augmentasi di atas
 
-2. Ouput Layer
+2. Hidden Layer
 
-    Menggunakan pooling sebanyak 2 dan matriks 2x2, convolution filter sebesar 64-128 dan matriks 3x3 dengan fungsi activation reLu, lalu menggunakan Layer Flatten dan Dense 
+    Menggunakan pooling sebanyak 2 dan matriks 2x2, convolution filter sebesar 64 dan matriks 3x3 dengan fungsi activation reLu, lalu menggunakan Layer Flatten dan Dense dengan filter sebanyak 128 dengan fungsi activation reLu
 
-3. Hidden Layer
+3. Output Layer
 
     Menggunakan Layer Dense sebanyak 4 sesuai dengan jumlah labelnya dengan fungsi activation softmax
 
